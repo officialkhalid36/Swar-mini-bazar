@@ -1,0 +1,171 @@
+/* ===========================
+   CSS RESET
+   =========================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--text-base);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-tight);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
+
+h5 {
+  font-size: var(--text-xl);
+}
+
+h6 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all var(--transition-fast);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+textarea {
+  resize: vertical;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-4);
+}
+
+pre {
+  overflow-x: auto;
+  padding: var(--space-4);
+}
+
+code {
+  padding: var(--space-1) var(--space-2);
+}
+
+/* Remove default scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
